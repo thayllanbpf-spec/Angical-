@@ -1,30 +1,199 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!doctype html>
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angical Construções</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Angical Construções | Obras e Reformas | Atendimento Nacional</title>
+  <meta name="description" content="Angical Construções: obras e reformas com atendimento nacional e emissão de NF. Experiência com McDonald's, Popeyes, Burger King e Localiza." />
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#121a2c;
+      --text:#e9eefc;
+      --muted:#b7c2e2;
+      --brand:#4da3ff;
+      --brand2:#34d399;
+      --stroke:rgba(255,255,255,.10);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background: radial-gradient(1200px 600px at 10% 0%, rgba(77,163,255,.25), transparent 60%),
+                  radial-gradient(900px 500px at 90% 10%, rgba(52,211,153,.18), transparent 60%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1100px;margin:0 auto;padding:22px}
+    .topbar{
+      display:flex;align-items:center;justify-content:space-between;gap:14px;
+      padding:14px 0;
+    }
+    .logo{
+      display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.4px;
+    }
+    .badge{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:8px 12px;border:1px solid var(--stroke);border-radius:999px;
+      background:rgba(255,255,255,.04);color:var(--muted);font-size:13px;
+    }
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:10px;
+      padding:12px 16px;border-radius:14px;border:1px solid var(--stroke);
+      background:linear-gradient(135deg, rgba(77,163,255,.20), rgba(52,211,153,.18));
+      color:var(--text);font-weight:700;
+      box-shadow: 0 12px 30px rgba(0,0,0,.25);
+      transition:.2s transform ease;
+      white-space:nowrap;
+    }
+    .btn:hover{transform:translateY(-1px)}
+    .btn.secondary{
+      background:rgba(255,255,255,.06);
+      box-shadow:none;
+    }
+    .hero{
+      display:grid;grid-template-columns:1.2fr .8fr;gap:22px;align-items:stretch;
+      padding:18px 0 8px;
+    }
+    @media (max-width:900px){ .hero{grid-template-columns:1fr} }
+    .card{
+      border:1px solid var(--stroke);border-radius:22px;background:rgba(255,255,255,.04);
+      backdrop-filter: blur(8px);
+      padding:22px;
+    }
+    h1{margin:10px 0 10px;font-size:40px;line-height:1.1}
+    @media (max-width:500px){ h1{font-size:32px} }
+    p{margin:0;color:var(--muted);font-size:16px;line-height:1.55}
+    .kpis{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+    .kpi{
+      padding:10px 12px;border-radius:14px;border:1px solid var(--stroke);
+      background:rgba(0,0,0,.18);color:var(--muted);font-size:14px
+    }
+    .services{
+      display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px
+    }
+    @media (max-width:900px){ .services{grid-template-columns:repeat(2,1fr)} }
+    @media (max-width:520px){ .services{grid-template-columns:1fr} }
+    .service{
+      padding:14px;border-radius:18px;border:1px solid var(--stroke);
+      background:rgba(0,0,0,.16)
+    }
+    .service strong{display:block;margin-bottom:6px}
+    .brands{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+    .brandpill{
+      padding:10px 12px;border-radius:999px;border:1px solid var(--stroke);
+      background:rgba(255,255,255,.05);color:var(--text);font-weight:700;font-size:13px;
+    }
+    .ctaBox{
+      display:flex;flex-direction:column;gap:12px;justify-content:space-between;height:100%;
+    }
+    .ctaRow{display:flex;gap:10px;flex-wrap:wrap}
+    .list{margin:12px 0 0;padding:0;list-style:none;color:var(--muted)}
+    .list li{margin:8px 0;display:flex;gap:10px}
+    .dot{width:10px;height:10px;border-radius:50%;background:var(--brand2);margin-top:7px;flex:0 0 10px}
+    .footer{
+      padding:22px 0 30px;color:rgba(233,238,252,.75);font-size:13px
+    }
+    .hr{height:1px;background:var(--stroke);margin:18px 0}
+    .small{font-size:13px;color:rgba(233,238,252,.72)}
+  </style>
 </head>
+
 <body>
-    <header>
-        <h1>Bem-vindo à Angical Construções</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Sobre nós</h2>
-            <p>A Angical Construções é uma empresa comprometida com a qualidade e a excelência em serviços de construção.</p>
-        </section>
-        <section>
-            <h2>Serviços</h2>
-            <ul>
-                <li>Construção Civil</li>
-                <li>Reformas</li>
-                <li>Projetos Personalizados</li>
-            </ul>
-        </section>
-        <footer>
-            <p>Contato: contato@angicalconstrucoes.com.br</p>
-        </footer>
-    </main>
+  <div class="wrap">
+    <!-- Top -->
+    <div class="topbar">
+      <div class="logo">
+        <span style="width:12px;height:12px;border-radius:4px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:inline-block"></span>
+        <span>ANGICAL CONSTRUÇÕES</span>
+      </div>
+      <a class="btn" href="https://wa.me/5561999341449?text=Ol%C3%A1!%20Quero%20solicitar%20um%20or%C3%A7amento%20com%20a%20Angical%20Constru%C3%A7%C3%B5es." target="_blank" rel="noopener">
+        📲 Solicitar orçamento
+      </a>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero">
+      <div class="card">
+        <span class="badge">✅ Atendimento nacional • 🧾 Emissão de NF • 🏗️ Obras e reformas</span>
+        <h1>Obras comerciais e corporativas com qualidade, prazo e padrão profissional.</h1>
+        <p>
+          A <strong>Angical Construções</strong> atua em todo o Brasil com equipe qualificada e experiência comprovada em obras para grandes marcas.
+        </p>
+
+        <div class="kpis">
+          <div class="kpi">📍 Atendimento em todo o Brasil</div>
+          <div class="kpi">🧾 Emissão de Nota Fiscal</div>
+          <div class="kpi">⏱️ Compromisso com prazos</div>
+          <div class="kpi">🔎 Acabamento e padrão de execução</div>
+        </div>
+
+        <div class="hr"></div>
+
+        <p><strong>Experiência:</strong></p>
+        <div class="brands">
+          <div class="brandpill">McDonald's</div>
+          <div class="brandpill">Popeyes</div>
+          <div class="brandpill">Burger King</div>
+          <div class="brandpill">Localiza</div>
+        </div>
+
+        <div class="hr"></div>
+
+        <p><strong>Serviços:</strong></p>
+        <div class="services">
+          <div class="service"><strong>Alvenaria</strong><span class="small">Estruturas e vedações</span></div>
+          <div class="service"><strong>Reboco</strong><span class="small">Regularização de paredes</span></div>
+          <div class="service"><strong>Contra-piso</strong><span class="small">Base nivelada e resistente</span></div>
+          <div class="service"><strong>Hidráulica</strong><span class="small">Instalação e manutenção</span></div>
+          <div class="service"><strong>Drywall</strong><span class="small">Divisórias e forros</span></div>
+          <div class="service"><strong>Porcelanato</strong><span class="small">Assentamento e acabamento</span></div>
+          <div class="service"><strong>Revestimentos</strong><span class="small">Paredes e pisos</span></div>
+          <div class="service"><strong>Pintura</strong><span class="small">Interna e externa</span></div>
+          <div class="service"><strong>Impermeabilização</strong><span class="small">Polimérica e manta líquida</span></div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="card ctaBox">
+        <div>
+          <span class="badge">📞 Contato direto</span>
+          <h2 style="margin:12px 0 8px;font-size:26px">Solicite um orçamento sem compromisso</h2>
+          <p>
+            Envie uma mensagem no WhatsApp com <strong>cidade, tipo de obra</strong> e <strong>prazo</strong>. Respondemos o mais rápido possível.
+          </p>
+
+          <ul class="list">
+            <li><span class="dot"></span>Atendimento em obras comerciais e corporativas</li>
+            <li><span class="dot"></span>Equipe preparada para execução e acabamento</li>
+            <li><span class="dot"></span>Organização, segurança e entrega dentro do padrão</li>
+          </ul>
+        </div>
+
+        <div class="ctaRow">
+          <a class="btn" href="https://wa.me/5561999341449?text=Ol%C3%A1!%20Quero%20solicitar%20um%20or%C3%A7amento%20(%2Ainforme%20cidade%2C%20tipo%20de%20servi%C3%A7o%20e%20prazo%2A)." target="_blank" rel="noopener">
+            WhatsApp (61) 99934-1449
+          </a>
+          <a class="btn secondary" href="tel:+5561999341449">📞 Ligar agora</a>
+        </div>
+
+        <p class="small" style="margin-top:6px">
+          Se preferir, copie e cole este contato: <strong>(61) 99934-1449</strong>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="hr"></div>
+      <div>
+        © <span id="year"></span> Angical Construções • Atendimento nacional • Emissão de NF
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
